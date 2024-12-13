@@ -1,0 +1,16 @@
+{
+    "name": "Node.js Dev Container",
+    "dockerFile": "../Dockerfile",
+    "context": "..",
+    "runArgs": ["-v", "/usr/src/app/node_modules"],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "postCreateCommand": "npm install && npm run dev",
+    "appPort": [5000],
+    "remoteUser": "node"
+}

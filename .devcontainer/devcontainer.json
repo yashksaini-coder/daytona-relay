@@ -3,14 +3,19 @@
     "dockerFile": "../Dockerfile",
     "context": "..",
     "runArgs": ["-v", "/usr/src/app/node_modules"],
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode"
+            ]
+        }
     },
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
-    ],
     "postCreateCommand": "npm install && npm run dev",
-    "appPort": [5000],
-    "remoteUser": "node"
+    "appPort": [8080],
+    "remoteUser": "vscode"
 }

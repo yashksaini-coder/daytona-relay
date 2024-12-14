@@ -1,13 +1,11 @@
-
-version: '3.8'
-
 services:
   app:
     build: .
     ports:
       - "3000:3000"
     volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+      - .:/dist/src/
+      - /dist/src/app/node_modules
     environment:
       - NODE_ENV=development
+    command: npx ts-node src/index.ts

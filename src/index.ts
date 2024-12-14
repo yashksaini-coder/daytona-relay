@@ -1,7 +1,7 @@
 import { WebSocketServer, WebSocket } from 'ws';
-import { createRoom, joinRoom, leaveRoom, listRooms } from '../lib/room';
-import { broadcast } from '../lib/chat';
-import { Rooms } from '../lib/types';
+import { createRoom, joinRoom, leaveRoom, listRooms } from './lib/room';
+import { broadcast } from './lib/chat';
+import { Rooms } from './lib/types';
 
 const server = new WebSocketServer({ port: 8080 });
 const rooms: Rooms = {};

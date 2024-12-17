@@ -1,4 +1,4 @@
-# Sample Relay chat 💬
+# Sample TypeScript/Express.js
 
 Relay Chat is a simple chat application backend built with websockets. It uses the [Daytona](https://github.com/daytonaio/daytona) framework for the development environment. For the backend, I used the [Websockets](https://www.npmjs.com/package/websocket) package.
 

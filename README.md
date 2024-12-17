@@ -1,9 +1,27 @@
 
 # 💬 Relay-Chat Typescript/React
 
-
-
 RTC Terminal is a modern real-time chat application that enables users to create or join chat rooms and communicate instantly with other participants. The application features a clean, responsive interface and supports real-time message delivery using WebSocket technology.
+
+---
+
+## 🚀 Getting Started  
+
+### Open Using Daytona  
+
+1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
+2. **Create the Workspace**:  
+   ```bash  
+   daytona create https://github.com/yashksaini-coder/relay-chat-daytona
+   ```  
+
+... MORE STEPS IF NEEDED ...
+
+4. **Start the Application**:  
+   ```bash  
+   npm run dev
+   ```  
+---
 
 ## ✨ Features
 
@@ -27,7 +45,6 @@ RTC Terminal is a modern real-time chat application that enables users to create
 - 🎢 Smooth transitions and hover effects
 - 📜 Scrollable message history
 
-## 🛠️ Tech Stack
 
 ## 🛠️ Tech Stack
 

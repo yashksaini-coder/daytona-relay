@@ -10,17 +10,27 @@ RTC Terminal is a modern real-time chat application that enables users to create
 ### Open Using Daytona  
 
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
+
 2. **Create the Workspace**:  
    ```bash  
    daytona create https://github.com/yashksaini-coder/relay-chat-daytona
-   ```  
-
-... MORE STEPS IF NEEDED ...
-
-4. **Start the Application**:  
+   ```
+   
+3. **Start the Backend first**:
+   ```
+   cd Backend && npm run dev
+   ```
+   
+4. **Next start the Frontend (client) side**:
+   ```
+   cd Frontend && npm run dev
+   ```
+   
+5. **Click on the local deployment URL of the Application**:  
    ```bash  
-   npm run dev
-   ```  
+   https://localhost/5173
+   ```
+   
 ---
 
 ## ✨ Features

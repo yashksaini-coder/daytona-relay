@@ -1,21 +1,23 @@
 {
-    "name": "Node.js Dev Container",
-    "dockerFile": "../Dockerfile",
-    "context": "..",
-    "runArgs": ["-v", "/usr/src/app/node_modules"],
+    "name": "Node.js Dev Container for Fullstack App",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+    "forwardPorts": [
+      8080
+    ],
     "customizations": {
-        "vscode": {
-            "settings": {
-                "terminal.integrated.shell.linux": "/bin/bash",
-                "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
-            },
-            "extensions": [
-                "dbaeumer.vscode-eslint",
-                "esbenp.prettier-vscode"
-            ]
-        }
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash",
+          "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+          "eslint.enable": true,
+          "editor.formatOnSave": true
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
     },
-    "postCreateCommand": "npm i",
-    "appPort": [8080],
-    "remoteUser": "vscode"
-}
+    "postCreateCommand": "npm install --prefix Backend && npm install --prefix Frontend"
+  }

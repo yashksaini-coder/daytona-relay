@@ -16,17 +16,12 @@ RTC Terminal is a modern real-time chat application that enables users to create
    daytona create https://github.com/yashksaini-coder/relay-chat-daytona
    ```
    
-3. **Start the Backend first**:
+3. **Next start the application**:
    ```
-   cd Backend && npm run dev
-   ```
-   
-4. **Next start the Frontend (client) side**:
-   ```
-   cd Frontend && npm run dev
+   npm run dev
    ```
    
-5. **Click on the local deployment URL of the Application**:  
+4. **Click on the local deployment URL of the Application**:  
    ```bash  
    https://localhost/5173
    ```
@@ -62,11 +57,6 @@ RTC Terminal is a modern real-time chat application that enables users to create
 | React | TypeScript | Tailwind CSS | Vite | React Toastify | Lucide React |
 | :---: | :--------: | :----------: | :--: | :------------: | :----------: |
 | ![React](https://skillicons.dev/icons?i=react) | ![TypeScript](https://skillicons.dev/icons?i=ts) | ![Tailwind CSS](https://skillicons.dev/icons?i=tailwind) | ![Vite](https://skillicons.dev/icons?i=vite) | ![React Toastify](https://skillicons.dev/icons?i=react) | ![Lucide React](https://github.com/user-attachments/assets/f4ad1606-9ad2-4726-910d-7843e45e8f9f) |
-
-### 🖥️ Backend
-| Node.js | TypeScript |
-| :-----: | :--------: |
-| ![Node.js](https://skillicons.dev/icons?i=nodejs) | ![TypeScript](https://skillicons.dev/icons?i=ts) |
 
 ## 🏗️ Architecture
 

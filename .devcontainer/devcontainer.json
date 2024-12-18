@@ -1,14 +1,14 @@
 {
-    "name": "Node.js Dev Container for Fullstack App",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+    "name": "Relay Chat Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
     "forwardPorts": [
       8080
     ],
     "customizations": {
       "vscode": {
         "settings": {
-          "terminal.integrated.shell.linux": "/bin/bash",
-          "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+          "terminal.integrated.shell.linux": "bash",
+          "files.autoSave": "onWindowChange",
           "eslint.enable": true,
           "editor.formatOnSave": true
         },
@@ -19,5 +19,5 @@
         ]
       }
     },
-    "postCreateCommand": "npm install --prefix Backend && npm install --prefix Frontend"
+    "postCreateCommand": "npm i"
   }

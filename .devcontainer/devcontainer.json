@@ -1,23 +1,24 @@
 {
-    "name": "Relay Chat Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node",
-    "forwardPorts": [
-      8080
-    ],
-    "customizations": {
-      "vscode": {
-        "settings": {
-          "terminal.integrated.shell.linux": "bash",
-          "files.autoSave": "onWindowChange",
-          "eslint.enable": true,
-          "editor.formatOnSave": true
-        },
-        "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode",
-          "ms-azuretools.vscode-docker"
-        ]
-      }
-    },
-    "postCreateCommand": "npm i"
-  }
+  "name": "Relay Chat Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "forwardPorts": [
+    3000
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "bash",
+        "files.autoSave": "onWindowChange",
+        "eslint.enable": true,
+        "typescript.enable": true,
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": "npm i"
+}

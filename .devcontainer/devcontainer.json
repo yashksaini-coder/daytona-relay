@@ -1,6 +1,6 @@
 {
   "name": "Relay Chat Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
   "forwardPorts": [
     3000
   ],

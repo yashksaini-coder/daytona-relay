@@ -2,7 +2,7 @@
   "name": "Relay Chat Dev Container",
   "image": "mcr.microsoft.com/devcontainers/typescript-node",
   "forwardPorts": [
-    3000
+    5173
   ],
   "customizations": {
     "vscode": {
@@ -16,9 +16,9 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
       ]
     }
   },
-  "postCreateCommand": "npm i"
+  "postCreateCommand": "npm install"
 }
